@@ -1,0 +1,61 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{75A5AD89-F583-45E7-B534-BD71D1C778E5}"
+	ProjectSection(SolutionItems) = preProject
+		copilot\01_Solution_und_Projektstruktur.txt = copilot\01_Solution_und_Projektstruktur.txt
+		copilot\02_Core_Architektur_DI_DataStores.txt = copilot\02_Core_Architektur_DI_DataStores.txt
+		copilot\03_WPF_UI_CustomControls.txt = copilot\03_WPF_UI_CustomControls.txt
+		copilot\04_Fallback_Quellen_Settings_Tests.txt = copilot\04_Fallback_Quellen_Settings_Tests.txt
+		COPILOT_INSTRUCTIONS_REFERENCE.md = COPILOT_INSTRUCTIONS_REFERENCE.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookScanner", "BookScanner\BookScanner.csproj", "{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookScanner.Wpf", "BookScanner.Wpf\BookScanner.Wpf.csproj", "{CD1A64B2-7BCE-1443-3D35-480F9492A129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookScanner.Tests", "BookScanner.Tests\BookScanner.Tests.csproj", "{93E7B549-03BA-4673-4635-2BC2B8098D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookScanner.Wpf.Tests", "BookScanner.Wpf.Tests\BookScanner.Wpf.Tests.csproj", "{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Production", "Production", "{BE9730B1-E48E-4F9E-AAFF-8A5F8EB75565}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{89DEDC94-6C40-44A3-953F-C31AAD7DE1B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1A64B2-7BCE-1443-3D35-480F9492A129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1A64B2-7BCE-1443-3D35-480F9492A129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1A64B2-7BCE-1443-3D35-480F9492A129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1A64B2-7BCE-1443-3D35-480F9492A129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E7B549-03BA-4673-4635-2BC2B8098D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E7B549-03BA-4673-4635-2BC2B8098D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E7B549-03BA-4673-4635-2BC2B8098D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E7B549-03BA-4673-4635-2BC2B8098D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2} = {BE9730B1-E48E-4F9E-AAFF-8A5F8EB75565}
+		{CD1A64B2-7BCE-1443-3D35-480F9492A129} = {BE9730B1-E48E-4F9E-AAFF-8A5F8EB75565}
+		{93E7B549-03BA-4673-4635-2BC2B8098D84} = {89DEDC94-6C40-44A3-953F-C31AAD7DE1B9}
+		{947E5AFE-651E-88AF-F0D6-7C37B0D73C6F} = {89DEDC94-6C40-44A3-953F-C31AAD7DE1B9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69C44192-241B-4336-98AE-4E722515FDE9}
+	EndGlobalSection
+EndGlobal

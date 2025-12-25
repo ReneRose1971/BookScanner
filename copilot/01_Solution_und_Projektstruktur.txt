@@ -1,0 +1,42 @@
+PROMPT 01 — Solution + Projektstruktur
+
+
+VERBINDLICHE REFERENZEN (vor Beginn lesen und beachten):
+- Globale Copilot-Instructions:
+  C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\copilot\global-copilot-instructions.md
+
+- Library-Dokumentationen / Handlungsanweisungen:
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\Common.BootStrap.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\CustomWPFControls.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\DataStores.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\TestHelper.DataStores.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\TestHelper.md
+
+REGELN:
+- Die genannten Dokumente sind als maßgebliche Referenz zu behandeln.
+- Falls sich Vorgaben widersprechen, haben die global-copilot-instructions.md Vorrang.
+- Libraries sollen, wo fachlich sinnvoll, bevorzugt verwendet oder vorbereitet integriert werden.
+
+
+ZIEL:
+- Neue Solution „BookScanner“
+- GENAU zwei Produktionsprojekte + je ein Testprojekt
+- Saubere Grundlage für spätere Erweiterung
+
+AUFGABEN:
+1) Solution anlegen: BookScanner
+2) Solution Folder: requirements
+   - Datei: requirements\README.md
+   - Enthält: App-Ziel, zwei Listen (Datenbank/Wunschliste), Import per Scan oder Suche
+3) Projekte (.NET 8):
+   - BookScanner (Class Library, Core)
+   - BookScanner.Wpf (WPF App, UI-only)
+   - BookScanner.Tests (xUnit)
+   - BookScanner.Wpf.Tests (xUnit)
+4) Referenzen:
+   - WPF → Core
+   - Tests → jeweiliges Produktionsprojekt
+5) Root-Datei:
+   - COPILOT_INSTRUCTIONS_REFERENCE.md
+   - Enthält NUR Verweise auf die oben genannten Referenzdateien
+6) Build muss fehlerfrei sein.

@@ -1,0 +1,25 @@
+PROMPT 03 — WPF UI, MVVM, Custom Controls
+
+
+VERBINDLICHE REFERENZEN (vor Beginn lesen und beachten):
+- Globale Copilot-Instructions:
+  C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\copilot\global-copilot-instructions.md
+
+- Library-Dokumentationen / Handlungsanweisungen:
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\Common.BootStrap.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\CustomWPFControls.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\DataStores.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\TestHelper.DataStores.md
+  C:\Users\schro\Documents\Solutionbundler\bundles\Libraries\TestHelper.md
+
+REGELN:
+- Die genannten Dokumente sind als maßgebliche Referenz zu behandeln.
+- Falls sich Vorgaben widersprechen, haben die global-copilot-instructions.md Vorrang.
+- Libraries sollen, wo fachlich sinnvoll, bevorzugt verwendet oder vorbereitet integriert werden.
+
+
+PROJEKT: BookScanner.Wpf
+
+- Nutze CommunityToolkit.Mvvm
+- Prüfe CustomWPFControls.md
+- KEINE Businesslogik im UI

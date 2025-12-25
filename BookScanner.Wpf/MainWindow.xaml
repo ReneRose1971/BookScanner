@@ -1,0 +1,73 @@
+﻿<Window x:Class="BookScanner.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookScanner.Wpf"
+        mc:Ignorable="d"
+        Title="BookScanner" Height="600" Width="1000"
+        Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Search Bar -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBox Width="400" Height="30" VerticalContentAlignment="Center"
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                     Margin="0,0,10,0"/>
+            <Button Content="Add to Database" Width="120" Height="30"
+                    Command="{Binding AddToDatabaseCommand}"
+                    Margin="0,0,5,0"/>
+            <Button Content="Add to Wishlist" Width="120" Height="30"
+                    Command="{Binding AddToWishlistCommand}"/>
+        </StackPanel>
+
+        <!-- Status Bar -->
+        <TextBlock Grid.Row="1" Text="{Binding StatusMessage}" 
+                   Foreground="DarkBlue" Margin="0,0,0,10"/>
+
+        <!-- Book Lists -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Database List -->
+            <GroupBox Grid.Column="0" Header="My Books">
+                <ListBox ItemsSource="{Binding DatabaseBooks}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="5">
+                                <TextBlock Text="{Binding Book.Title}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Book.Author}" FontSize="11" Foreground="Gray"/>
+                                <TextBlock Text="{Binding Book.Isbn}" FontSize="10" Foreground="DarkGray"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+
+            <!-- Wishlist -->
+            <GroupBox Grid.Column="2" Header="Wishlist">
+                <ListBox ItemsSource="{Binding WishlistBooks}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="5">
+                                <TextBlock Text="{Binding Book.Title}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Book.Author}" FontSize="11" Foreground="Gray"/>
+                                <TextBlock Text="{Binding Book.Isbn}" FontSize="10" Foreground="DarkGray"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>
