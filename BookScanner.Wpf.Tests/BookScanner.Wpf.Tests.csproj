@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
@@ -22,6 +22,28 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookScanner.Wpf\BookScanner.Wpf.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common.BootStrap">
+      <HintPath>..\..\Common.Bootstrap\Common.BootStrap\bin\Debug\net8.0\Common.BootStrap.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomWPFControls">
+      <HintPath>..\..\CustomWPFControls\CustomWPFControls\bin\Debug\net8.0-windows\CustomWPFControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DataStores">
+      <HintPath>..\..\DataStores\DataStores\bin\Debug\net8.0\DataStores.dll</HintPath>
+    </Reference>
+    <Reference Include="TestHelper">
+      <HintPath>..\..\TestHelper\TestHelper\bin\Debug\net8.0\TestHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="TestHelper.DataStores">
+      <HintPath>..\..\DataStores\TestHelper.DataStores\bin\Debug\net8.0\TestHelper.DataStores.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Project\" />
   </ItemGroup>
 
 </Project>

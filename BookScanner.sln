@@ -4,11 +4,10 @@ VisualStudioVersion = 18.1.11312.151
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{75A5AD89-F583-45E7-B534-BD71D1C778E5}"
 	ProjectSection(SolutionItems) = preProject
-		copilot\01_Solution_und_Projektstruktur.txt = copilot\01_Solution_und_Projektstruktur.txt
-		copilot\02_Core_Architektur_DI_DataStores.txt = copilot\02_Core_Architektur_DI_DataStores.txt
-		copilot\03_WPF_UI_CustomControls.txt = copilot\03_WPF_UI_CustomControls.txt
-		copilot\04_Fallback_Quellen_Settings_Tests.txt = copilot\04_Fallback_Quellen_Settings_Tests.txt
-		COPILOT_INSTRUCTIONS_REFERENCE.md = COPILOT_INSTRUCTIONS_REFERENCE.md
+		..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\BOOTSTRAP.md = ..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\BOOTSTRAP.md
+		..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\DataStores.md = ..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\DataStores.md
+		..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\global-copilot-instructions.md = ..\..\..\Documents\Visual Studio 2022\Projects\CSharp\copilot\global-copilot-instructions.md
+		Instructions.md = Instructions.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookScanner", "BookScanner\BookScanner.csproj", "{23790D48-FD9E-2D13-49C4-E3BA4A11E5A2}"
